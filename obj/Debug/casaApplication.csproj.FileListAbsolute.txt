@@ -1,0 +1,13 @@
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\bin\Debug\casaApplication.exe.config
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\bin\Debug\casaApplication.exe
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\bin\Debug\casaApplication.pdb
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.csprojAssemblyReference.cache
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.Properties.Resources.resources
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.csproj.GenerateResource.cache
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.csproj.CoreCompileInputs.cache
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.exe
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.pdb
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.home.resources
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.csproj.CopyComplete
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.Settings.resources
