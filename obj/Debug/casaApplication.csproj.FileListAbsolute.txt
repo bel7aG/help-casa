@@ -11,3 +11,6 @@ C:\Users\bel7a\source\repos\casaApplication\casaApplication\bin\Debug\Bunifu_UI_
 C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.home.resources
 C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.csproj.CopyComplete
 C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.Settings.resources
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.Client.resources
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.Bill.resources
+C:\Users\bel7a\source\repos\casaApplication\casaApplication\obj\Debug\casaApplication.AdManagement.resources

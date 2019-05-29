@@ -33,7 +33,10 @@ namespace casaApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Settings settingForm = new Settings();
+            settingForm.TopLevel = false;
+            container.Controls.Add(settingForm);
+            settingForm.Show();
         }
 
         private void helpCasa_Click(object sender, EventArgs e)
@@ -64,6 +67,7 @@ namespace casaApplication
 
         private void container_Paint(object sender, PaintEventArgs e)
         {
+            
         }
 
         private void headerPanel_MouseDown(object sender, MouseEventArgs e)
@@ -104,6 +108,19 @@ namespace casaApplication
             admScreenButton.IconRightVisible = false;
             clientScreenButton.IconRightVisible = true;
             billScreenButton.IconRightVisible = false;
+
+
+            clientScreenButton.Enabled = false;
+            admScreenButton.Enabled = true;
+            billScreenButton.Enabled = true;
+            settingButton.Enabled = true;
+
+            container.Controls.Clear();
+
+            Client clientForm = new Client();
+            clientForm.TopLevel = false;
+            container.Controls.Add(clientForm);
+            clientForm.Show();
         }
 
         private void admScreenButton_Click(object sender, EventArgs e)
@@ -111,6 +128,19 @@ namespace casaApplication
             admScreenButton.IconRightVisible = true;
             clientScreenButton.IconRightVisible = false;
             billScreenButton.IconRightVisible = false;
+
+            clientScreenButton.Enabled = true;
+            admScreenButton.Enabled = false;
+            billScreenButton.Enabled = true;
+            settingButton.Enabled = true;
+
+
+            container.Controls.Clear();
+
+            AdManagement adManagementForm = new AdManagement();
+            adManagementForm.TopLevel = false;
+            container.Controls.Add(adManagementForm);
+            adManagementForm.Show();
         }
 
         private void billScreenButton_Click(object sender, EventArgs e)
@@ -118,6 +148,18 @@ namespace casaApplication
             admScreenButton.IconRightVisible = false;
             clientScreenButton.IconRightVisible = false;
             billScreenButton.IconRightVisible = true;
+
+            container.Controls.Clear();
+
+            Bill billForm = new Bill();
+            billForm.TopLevel = false;
+            container.Controls.Add(billForm);
+            billForm.Show();
+
+            clientScreenButton.Enabled = true;
+            admScreenButton.Enabled = true;
+            billScreenButton.Enabled = false;
+            settingButton.Enabled = true;
         }
 
         private void settingButton_Click(object sender, EventArgs e)
@@ -126,12 +168,20 @@ namespace casaApplication
             clientScreenButton.IconRightVisible = false;
             billScreenButton.IconRightVisible = false;
 
+
+            clientScreenButton.Enabled = true;
+            admScreenButton.Enabled = true;
+            billScreenButton.Enabled = true;
+            settingButton.Enabled = false;
+
+
             container.Controls.Clear();
 
             Settings settingForm = new Settings();
             settingForm.TopLevel = false;
             container.Controls.Add(settingForm);
             settingForm.Show();
+
         }
     }
 }

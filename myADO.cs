@@ -72,10 +72,10 @@ namespace casaApplication
             }
         }
 
-        public bool addClient(String Code, String Nom, String Tel, String Email, String Web)
+        public bool addClient(String nom, String prenom, String civilite, String raisonSocial, String adresse, String ville, String codePostal, String telMobile, String telFixe, String email)
         {
             myCommande.Connection = myConnection;
-            myCommande.CommandText = "INSERT INTO client values('" + Code + "', '" + Nom + "', '" + Tel + "', '" + Email + "', '" + Web + "');";
+            myCommande.CommandText = "INSERT INTO Client(nom, prenom, civilite, raisonsocial, adresse, ville, codepostal, telmobile, telfixe, email) values('" + nom + "', '" + prenom + "', '" + civilite + "', '" + raisonSocial + "', '" + adresse + "', '" + ville + "', '" + codePostal + "', '" + telMobile + "', '" + telFixe + "', '" + email+ "');";
 
             try
             {
@@ -89,10 +89,10 @@ namespace casaApplication
             }
         }
 
-        public bool deleteClient(String code)
+        public bool deleteClient(int id)
         {
             myCommande.Connection = myConnection;
-            myCommande.CommandText = "DELETE FROM client where codecli = '" + code + "';";
+            myCommande.CommandText = "DELETE FROM Client where id = " + id + ";";
             try
             {
                 myCommande.ExecuteNonQuery();
@@ -105,10 +105,10 @@ namespace casaApplication
             }
         }
 
-        public bool findClient(String code)
+        public bool findClient(int id)
         {
             myCommande.Connection = myConnection;
-            myCommande.CommandText = "SELECT * from client where codecli = '" + code + "';";
+            myCommande.CommandText = "SELECT * from client where id = " + id + ";";
             try
             {
                 myDataReader = myCommande.ExecuteReader();
@@ -117,6 +117,23 @@ namespace casaApplication
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
+                return false;
+            }
+        }
+
+        public bool updateClient(int id, String nom, String prenom, String civilite, String raisonSocial, String adresse, String ville, String codePostal, String telMobile, String telFixe, String email)
+        {
+            myCommande.Connection = myConnection;
+            myCommande.CommandText = "UPDATE Client SET nom = '" + nom + "',prenom = '" + prenom + "',civilite = '" + civilite + "',raisonSocial = '" + raisonSocial + "',adresse = '" + adresse + "',ville = '" + ville + "',codePostal = '" + codePostal + "',telMobile = '" + telMobile + "',telFixe = '" + telFixe + "',email = '" + email + "' where id = " + id + ";";
+
+            try
+            {
+                myCommande.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("erreur de chargement \n" + e.Message);
                 return false;
             }
         }

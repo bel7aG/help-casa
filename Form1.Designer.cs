@@ -136,7 +136,7 @@
             this.clientScreenButton.BorderRadius = 0;
             this.clientScreenButton.ButtonText = "Client";
             this.clientScreenButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clientScreenButton.DisabledColor = System.Drawing.Color.Gray;
+            this.clientScreenButton.DisabledColor = System.Drawing.Color.Black;
             this.clientScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientScreenButton.Iconcolor = System.Drawing.Color.Transparent;
             this.clientScreenButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("clientScreenButton.Iconimage")));
@@ -173,7 +173,7 @@
             this.admScreenButton.BorderRadius = 0;
             this.admScreenButton.ButtonText = "Ad Management";
             this.admScreenButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.admScreenButton.DisabledColor = System.Drawing.Color.Gray;
+            this.admScreenButton.DisabledColor = System.Drawing.Color.Black;
             this.admScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admScreenButton.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.admScreenButton.Iconcolor = System.Drawing.Color.Transparent;
@@ -211,7 +211,7 @@
             this.billScreenButton.BorderRadius = 0;
             this.billScreenButton.ButtonText = "Bill";
             this.billScreenButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.billScreenButton.DisabledColor = System.Drawing.Color.Gray;
+            this.billScreenButton.DisabledColor = System.Drawing.Color.Black;
             this.billScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billScreenButton.Iconcolor = System.Drawing.Color.Transparent;
             this.billScreenButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("billScreenButton.Iconimage")));
